@@ -22,6 +22,7 @@ import { FaFileExcel, FaFileCode, FaSignOutAlt } from "react-icons/fa";
 import * as XLSX from "xlsx";
 import { MdArrowDropUp, MdArrowDropDown } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const METRICS = {
   carbonEmissions: {
@@ -153,7 +154,7 @@ const Dashboard = () => {
   // Modify the handleSubmit function
   const handleSubmit = async () => {
     if (!isFormComplete()) {
-      alert('Please fill in all metrics for all years before submitting.');
+      toast.error('Please fill in all metrics for all years before submitting.');
       return;
     }
 
@@ -170,11 +171,11 @@ const Dashboard = () => {
       });
 
       if (response.ok) {
-        alert("Data submitted successfully!");
+        toast.success("Data submitted successfully!");
       }
     } catch (error) {
       console.error("Error submitting data:", error);
-      alert("Failed to submit data. Please try again.");
+      toast.error("Failed to submit data. Please try again.");
     }
   };
 

@@ -14,7 +14,7 @@ const metricSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  wasteGenerated: {
+  wasteDistributed: {
     type: Number,
     required: true,
   },
