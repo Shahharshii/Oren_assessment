@@ -12,10 +12,7 @@ const app = express();
 
 connectDB();
 
-app.use(cors({
-  origin: process.env.FRONTEND_URL  // Replace with your frontend URL
-
-}));
+app.use(cors());
 app.use(express.json());
 
 app.listen(process.env.PORT, () => {
