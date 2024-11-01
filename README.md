@@ -1,10 +1,10 @@
-# Oren Sustainability Dashboard
+# Sustainability Dashboard
 
-Welcome to the **Oren Sustainability Dashboard**, a comprehensive platform for tracking and improving environmental impact. Oren provides businesses with data-driven insights to foster sustainability and eco-friendly practices.
+Welcome to the **Sustainability Dashboard**, a comprehensive platform for tracking and improving environmental impact. Oren provides businesses with data-driven insights to foster sustainability and eco-friendly practices.
 
 ### Deployed URLs
 
-- **URL**: [https://sustanibilty-dashboard-oren.onrender.com](https://sustanibilty-dashboard-oren.onrender.com)
+- **URL**: [https://oren-assessment-gamma.vercel.app/]
 
 ---
 
@@ -14,33 +14,35 @@ Welcome to the **Oren Sustainability Dashboard**, a comprehensive platform for t
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Screenshots](#screenshots)
-- [Access Ways](#access)
+
 
 ---
 
 ## Project Overview
 
-The Oren Sustainability Dashboard is designed to help companies and organizations track and manage their environmental sustainability metrics. The platform provides insights into energy consumption, waste management, carbon footprint, and other environmental impact metrics, giving businesses the tools to make informed decisions for a greener future.
+The Oren Sustainability Dashboard is designed to help companies and organizations track and manage their environmental sustainability metrics. The platform provides insights into Carbon Emissions, Water Usage, Waste Distribution and Energy Consumption giving businesses the tools to make informed decisions for a greener future.
 
 ---
 
 ## Features
-
-1. **Login System**:
+1. **Register System**:
+   - Register system for users using name, email and password.
+ 
+2. **Login System**:
    - Secure login system for authorized users using email and password.
    - JWT-based authentication to ensure secure access to the dashboard.
    - User session management with localStorage token storage.
 
 2. **Dashboard Overview**:
-   - A dynamic dashboard presenting key sustainability metrics such as energy consumption, waste management, and carbon emissions.
+   - A dynamic dashboard presenting key sustainability metrics such as Carbon Emissions, Water Usage, Waste Distribution and Energy Consumption .
    - Data visualization using graphs and charts for better insights.
 
 3. **User Role**:
    - Only Login Admins and access the platform.
 
 4. **Data Insights & Reports**:
-   - Generate Json Data to track progress over time and compare performance.
-   - Downloadable reports in JSON format for external review.
+   - Generate Json Data and Excel Data to track progress over time and compare performance.
+   - Downloadable reports in JSON format and Excel Format for external review.
 
 5. **Responsive Design**:
    - Fully responsive design, optimized for both mobile and desktop screens.
@@ -54,8 +56,8 @@ The Oren Sustainability Dashboard is designed to help companies and organization
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB (via Mongoose)
 - **Authentication**: JWT (JSON Web Tokens)
-- **Charts**: Chart.js or any other data visualization library
-- **Deployment**: Render (Backend) | Netlify (Frontend)
+- **Charts**: Chart.js or recharts any other data visualization library
+- **Deployment**: Render (Backend) | Vercel (Frontend)
 
 ---
 
