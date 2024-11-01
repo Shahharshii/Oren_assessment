@@ -241,6 +241,19 @@ const Dashboard = () => {
     fetchMetricData();
   }, []); // Empty dependency array means this runs once on component mount
 
+  // Add this state to track screen size
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1024);
+
+  // Add this useEffect to handle screen resize
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 1024);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-50 p-2 sm:p-4 md:p-6">
       <div
@@ -459,19 +472,37 @@ const Dashboard = () => {
                     Current: Number(sustainabilityData["2023"][metric]) || 0,
                     Benchmark: BENCHMARKS[metric],
                     Performance:
-                      (
-                        ((Number(sustainabilityData["2023"][metric]) || 0) /
-                          BENCHMARKS[metric]) *
-                        100
-                      ).toFixed(1) + "%",
+                      (((Number(sustainabilityData["2023"][metric]) || 0) /
+                        BENCHMARKS[metric]) *
+                        100).toFixed(1) + "%",
                   }))}
-                  margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+                  margin={{
+                    top: 20,
+                    right: 30,
+                    left: 20,
+                    bottom: isSmallScreen ? 70 : 20
+                  }}
                 >
                   <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="name" />
-                  <YAxis />
+                  <XAxis
+                    dataKey="name"
+                    tick={{
+                      fontSize: isSmallScreen ? 10 : 14,
+                      angle: isSmallScreen ? -45 : 0,
+                      textAnchor: isSmallScreen ? "end" : "middle",
+                      dy: isSmallScreen ? 10 : 0
+                    }}
+                    interval={0}
+                    height={isSmallScreen ? 60 : 30}
+                  />
+                  <YAxis tick={{ fontSize: isSmallScreen ? 10 : 14 }} />
                   <Tooltip />
-                  <Legend />
+                  <Legend
+                    wrapperStyle={{
+                      fontSize: isSmallScreen ? 10 : 14,
+                      paddingTop: isSmallScreen ? '20px' : '10px'
+                    }}
+                  />
                   <Bar
                     dataKey="Current"
                     fill="#357588"
