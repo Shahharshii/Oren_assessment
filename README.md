@@ -63,24 +63,34 @@ The Oren Sustainability Dashboard is designed to help companies and organization
 
 ## Screenshots
 
+### 1. **Register Page**
+The user can Register in using their name, email and password.
+ ![image](https://github.com/user-attachments/assets/14ed9201-a825-4623-8289-91b97f1ef2c0)
+ 
+
 ### 1. **Login Page**
 The user can log in using their email and password to access the dashboard.
-![image](https://github.com/user-attachments/assets/d662c21d-60d5-4bbe-a585-7bd42a08d0e0)
+![image](https://github.com/user-attachments/assets/cf432c2b-12ca-48b8-8857-5b4399b165ad)
 
 ### 2. **Dashboard Overview**
 Displays key metrics and data visualizations related to sustainability projects.
-![image](https://github.com/user-attachments/assets/8edd95c2-6903-4dc1-8792-4c1e3b1928a9)
+![image](https://github.com/user-attachments/assets/31004de8-266d-41e9-a93e-915a68722a07)
+![image](https://github.com/user-attachments/assets/0c74d45a-88fb-403d-b37f-6479490a7694)
+
+
 
 Same in mobile screen will be :
-![image](https://github.com/user-attachments/assets/fb62fcf7-f0f4-4c69-86f7-62c69eded278)
+![image](https://github.com/user-attachments/assets/39e0f63c-44a5-40a1-82ea-4da47b215d5a)
+![image](https://github.com/user-attachments/assets/e4d3d992-c457-4037-9f10-e122652c44bd)
+
 
 
 ### 3. **Metrics Adding and Comparing with Companies Benchmark**
 Users can manage and track various sustainability projects and they can Compare with the Company Benchmarks.
-![image](https://github.com/user-attachments/assets/96364783-8551-4c40-b975-b8550e0630b8)
+![image](https://github.com/user-attachments/assets/9d878742-b3b7-481e-abda-b435cb01452f)
 
 
-### 4 Export JSON Functionality
+### 4.  **Export JSON Functionality**
 
 The **Export JSON** feature allows users to download the entire sustainability project data in a structured JSON format. This can be useful for reporting, data analysis, or backups. 
 
@@ -90,31 +100,24 @@ The **Export JSON** feature allows users to download the entire sustainability p
   
 - **Usage:**
   This feature is accessible from the dashboard, making it easy for users to extract data at any point in time for external analysis or sharing.
+  ![image](https://github.com/user-attachments/assets/0de29777-3580-419f-80f6-e4ce72401498)
 
-![image](https://github.com/user-attachments/assets/044854a2-6713-4b14-80b2-4c8ff2440667)
 
 
-## Access Ways
+  ### 5.  **Export EXCEL Functionality**
 
-### Seeder File and Pre-entered Admin Data
+The **Export EXCEL** feature allows users to download the entire sustainability project data in a structured xlsx format. This can be useful for reporting, data analysis, or backups. 
 
-To ensure the platform is ready for use after setup, a seeder file is included to pre-populate the database with an initial admin account. This allows for immediate access to the dashboard after the first-time deployment without manually entering credentials.
-
-- **Admin Credentials:**
-  - **Email:** `admin1@example.com`
-  - **Password:** `password123`
-
-- **Seeder File:**
-  - The seeder script automatically inserts this admin user into the database when the project is set up. 
-  - It ensures that there is at least one user with administrative privileges who can log in, manage the dashboard, and perform administrative functions such as adding or editing data.
+- **How It Works:**
+  - The system compiles all relevant project information, including metrics, progress updates, and project details.
+  - Users can simply click the **Download EXCEL** button, and a `.xlsx` file will be generated and downloaded automatically.
   
 - **Usage:**
-  - After setting up the project, log in with the pre-entered admin credentials to access the full features of the dashboard, including the ability to export JSON data.
-  
-- **Security:**
-  - It is strongly recommended to change the admin password upon the first login to ensure security.
+  This feature is accessible from the dashboard, making it easy for users to extract data at any point in time for external analysis or sharing.
+  ![image](https://github.com/user-attachments/assets/d0d2b201-7226-4e35-b34b-f44a794daefb)
 
-- **Note:**
-  - If anyone wants to retrieve the credentials of the admin user, they can check the seeder file for the pre-entered details.
 
-![image](https://github.com/user-attachments/assets/165e7a4b-6bf4-4639-96cb-73b78c2a3b08)
+
+
+
+
