@@ -81,6 +81,9 @@ Displays key metrics and data visualizations related to sustainability projects.
 
 Same in mobile screen will be :
 ![image](https://github.com/user-attachments/assets/39e0f63c-44a5-40a1-82ea-4da47b215d5a)
+
+
+
 ![image](https://github.com/user-attachments/assets/e4d3d992-c457-4037-9f10-e122652c44bd)
 
 
